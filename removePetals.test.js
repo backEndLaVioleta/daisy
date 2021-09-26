@@ -49,7 +49,24 @@ describe('testing Daisy',()=>{
             await daisy.play();
             expect(spyPrintRed).toHaveBeenCalledTimes(1);
         })
+        test('play() should not call printRed()', async ()=>{
+            // creamos el espia primero
+            // y se lo colocamos al objeto instanciado de la clase hecho en beforeEach
+            const spyDeshojarMargarita = jest.spyOn(daisy,'deshojarMargarita')
+                                                .mockImplementation(()=>Promise.resolve('me quiere'));
+            const spyPrintRed = jest.spyOn(daisy,'printRed');
+            await daisy.play();
+            expect(spyPrintRed).not.toHaveBeenCalled();
+        })
     })
+// deshojarMargarita
+    describe('testing deshojarMargarita Method', ()=>{
+        test('daisy should have an "async deshojarMargarita()" method', async ()=>{
+            const value = await Promise.resolve(true)
+            expect(value).toBe(true);
+        })
+    })
+
 
 
 })
