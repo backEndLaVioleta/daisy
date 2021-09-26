@@ -7,7 +7,7 @@
 
 ### JEST testing
 
-Tratar de realizar el test en los me&acute;todos asi&acute;ncronos
+Tratar de realizar el test en los m&eacute;todos as&iacute;ncronos
 
 
 #### Important
