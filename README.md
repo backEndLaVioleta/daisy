@@ -12,4 +12,12 @@ Tratar de realizar el test en los m&eacute;todos as&iacute;ncronos
 
 #### Important
 
+This is not my own code but [*Ra&uacute;l Garcia's*](https://github.com/rglepe) code. I will upload my own code ASAP
+
+### Documentation
+
+*Asynchronous Code with Jest* by [**Christian C. Salvadó**](https://www.pluralsight.com/guides/test-asynchronous-code-jest)
+
+
+
 

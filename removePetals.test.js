@@ -61,8 +61,8 @@ describe('testing Daisy',()=>{
     })
 // deshojarMargarita
     describe('testing deshojarMargarita Method', ()=>{
-        test('daisy should have an "async deshojarMargarita()" method', async ()=>{
-            const value = await Promise.resolve(true)
+        test('deshojarMargarita should return a Promise', async ()=>{
+            const value = await Promise.resolve(true);
             expect(value).toBe(true);
         })
     })
